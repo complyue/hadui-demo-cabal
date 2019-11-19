@@ -22,9 +22,11 @@ source-repository head
 
 library
   exposed-modules:
-      Rating
-      RoadWarrior
-      StatefulRating
+-- only the first module listed here will be armed by `cabal v2-repl`
+    InteractiveStuff
+    RoadWarrior
+    Rating
+    StatefulRating
   other-modules:
       Paths_hadui_demo
   hs-source-dirs:
