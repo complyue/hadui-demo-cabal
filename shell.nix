@@ -10,6 +10,6 @@ with (import (
   #../hadui
 ) { });
 haskellPackages.shellFor {
-  packages = p: [ p.zlib ];
-  nativeBuildInputs = [ pkgs.cabal-install ];
+  packages = p: [ p.hadui ];
+  nativeBuildInputs = [ pkgs.cabal-install pkgs.hadui ];
 }
